@@ -24,3 +24,8 @@ GPIO17
 LED
 
 ```
+
+```
+sudo apt update
+sudo apt install -y raspberrypi-kernel-headers device-tree-compiler
+```
