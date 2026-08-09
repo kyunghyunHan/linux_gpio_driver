@@ -21,7 +21,7 @@
                  * Raspberry Pi Physical Pin 11
                  */
                 led-gpios =
-                    <&gpio 2 0>;
+                    <&gpio 17 0>;
 
                 status = "okay";
             };
