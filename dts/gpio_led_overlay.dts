@@ -1,0 +1,30 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "brcm,bcm2711";
+
+    fragment@0 {
+
+        target-path = "/";
+
+        __overlay__ {
+
+            gpio_led_device {
+
+                compatible =
+                    "kyunghyun,gpio-led";
+
+                /*
+                 * GPIO17
+                 *
+                 * Raspberry Pi Physical Pin 11
+                 */
+                led-gpios =
+                    <&gpio 17 0>;
+
+                status = "okay";
+            };
+        };
+    };
+};
